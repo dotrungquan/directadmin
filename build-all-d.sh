@@ -1,6 +1,6 @@
 #!/bin/bash
 #Auth:
-cp /usr/local/directadmin/conf/directadmin.conf /usr/local/directadmin/conf/directadmin.conf.bak
+cp /usr/local/directadmin/conf/directadmin.conf /usr/local/directadmin/conf/directadmin.conf-$(date +%d-%m-%y)
 echo > /usr/local/directadmin/conf/directadmin.conf
 cat <<EOF > /usr/local/directadmin/conf/directadmin.conf
 add_userdb_quota=1
@@ -78,7 +78,7 @@ zip=1
 zstd=0
 EOF
 
-cp /usr/local/directadmin/custombuild/options.conf /usr/local/directadmin/custombuild/options.conf.bak
+cp /usr/local/directadmin/custombuild/options.conf /usr/local/directadmin/custombuild/options.conf-$(date +%d-%m-%y)
 echo > /usr/local/directadmin/custombuild/options.conf
 cat <<EOF > /usr/local/directadmin/custombuild/options.conf
 #PHP Settings
