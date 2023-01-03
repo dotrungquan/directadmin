@@ -84,11 +84,11 @@ cat <<EOF > /usr/local/directadmin/custombuild/options.conf
 #PHP Settings
 php1_release=7.4
 php1_mode=mod_php
-php2_release=7.3
+php2_release=8.1
 php2_mode=php-fpm
-php3_release=5.6
+php3_release=7.3
 php3_mode=php-fpm
-php4_release=5.3
+php4_release=5.6
 php4_mode=php-fpm
 secure_php=yes
 php_ini=no
