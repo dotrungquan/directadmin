@@ -193,6 +193,15 @@ redis=yes
 csf=no
 EOF
 
+perl -pi -e 's/mysqld=ON/mysqld=OFF/' /usr/local/directadmin/data/admin/services.status
+service mysqld stop
+mv /var/lib/mysql /var/lib/mysql.old
+cd /usr/local/directadmin/custombuild
+./build set mysql 5.6
+./build set mysql_inst mysql
+./build set mysql_backup no
+./build mysql
+
 cd /usr/local/directadmin/custombuild
 ./build all d
 ./build rewrite_confs
