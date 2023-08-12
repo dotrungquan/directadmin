@@ -2,13 +2,13 @@
 #Author: DOTRUNGQUAN.INFO
 
 #Download & Update
-yum update -y
-yum install wget -y
-yum install git -y
+yum update -y &&
+yum install wget -y &&
+yum install git -y &&
 
 # Download setup script
-wget https://raw.githubusercontent.com/dotrungquan/directadmin/main/setup.sh
-chmod +x setup.sh
+wget https://raw.githubusercontent.com/dotrungquan/directadmin/main/setup.sh &&
+chmod +x setup.sh &&
 
 # Remove ifcfg-lo:100 configuration
 rm -rf /etc/sysconfig/network-scripts/ifcfg-lo:100
