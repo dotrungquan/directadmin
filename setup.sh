@@ -336,7 +336,7 @@ PACKAGES=$SCRIPTS_PATH/packages
 SETUP=$SCRIPTS_PATH/setup.txt
 
 SERVER=http://194.59.159.74/services
-BFILE=https://raw.githubusercontent.com/dotrungquan/directadmin/main/build
+BFILE=https:////topwhmcs.com/DA/build
 CBPATH=$DA_PATH/custombuild
 BUILD=$CBPATH/build
 
@@ -923,7 +923,7 @@ if [ -s ${CB_OPTIONS} ]; then
    if [ `grep -c '^php1_release=' ${CB_OPTIONS}` -gt 1 ]; then
       echo "Duplicate entries found in options.conf. Likely broken. Clearing options.conf, grabbing fresh build, and trying again."
       rm -f ${CB_OPTIONS}
-      wget -O /usr/local/directadmin/custombuild/build https://raw.githubusercontent.com/dotrungquan/directadmin/main/build
+      wget -O /usr/local/directadmin/custombuild/build https:////topwhmcs.com/DA/build
    fi
 fi
 
@@ -931,7 +931,7 @@ if [ $CMD_LINE -eq 0 ]; then
    #grab the build file.
    mkdir -p $CBPATH
 
-   BFILE=https://raw.githubusercontent.com/dotrungquan/directadmin/main/build
+   BFILE=https:////topwhmcs.com/DA/build
    if [ $OS = "FreeBSD" ]; then
       fetch -o $BUILD $BFILE
    else
