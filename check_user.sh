@@ -1,7 +1,7 @@
 #!/bin/bash
 mkdir -p /root/admin-script/
-tocuh /root/admin-script/user_suspend.txt
-tocuh /root/admin-script/user_active.txt
+touch /root/admin-script/user_suspend.txt
+touch /root/admin-script/user_active.txt
 # Di chuyển đến thư mục chứa dữ liệu người dùng DirectAdmin
 cd /usr/local/directadmin/data/users
 echo > /root/admin-script/user_suspend.txt
