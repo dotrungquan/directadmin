@@ -64,8 +64,8 @@ message+="✅ Đã dùng: $used"$'\n'
 message+="✅ Còn trống: $available"$'\n'
 
 # Telegram Bot token và chat_id
-TELEGRAM_BOT_TOKEN="5886686694:AAG37_v-djZW9M6P2TKUmWJfm3IkuTtV9tI"
-TELEGRAM_CHAT_ID="-803198761"
+TELEGRAM_BOT_TOKEN="Nhập vào token"
+TELEGRAM_CHAT_ID="Nhập vào ID Chat"
 
 # Gửi thông điệp đến Telegram
 curl -s -X POST "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage" -d "chat_id=$TELEGRAM_CHAT_ID" -d "text=$message"
