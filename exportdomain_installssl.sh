@@ -5,7 +5,8 @@ domain_conf_dir="/usr/local/directadmin/data/users"
 
 # Đường dẫn đến file domain.txt
 output_file="/root/domain.txt"
-
+# Xóa nội dung cũ của file domain.txt trước khi ghi mới
+echo > "$output_file"
 # Lặp qua tất cả các file domain.conf
 for conf_file in $domain_conf_dir/*/domains/*.conf; do
     # Kiểm tra xem file tồn tại
